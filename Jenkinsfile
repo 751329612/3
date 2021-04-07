@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'start build!'
-                python 'manage.py'
+                sh 'python --version'
             }
         }
         stage('Test') {
