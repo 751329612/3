@@ -5,7 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'start build!'
-                build
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'start test!'
             }
         }
     }
